@@ -1,11 +1,11 @@
 # Peacock Group
 ## Members:
- 1. 25048 Ntwari Deus
+ 1. 25048 NTWARI Deus
  2. 25918 INGABIRE NZARAMBA Ritha
  3. 26155 Ishimwe Mahoro Christianne 
  4. 26046 MABHYALA Wulsy
  5. 25514 HURUMA Innocent
- 6. 24849 Nahayo Arnaud
+ 6. 24849 NAHAYO Arnaud
  7. 25964 Mugisha Godefroid
  8. 26073 UMUGWANEZA Aimée
  9. 26975 NIYOYAVUZE AMIELLE PONTIENNE
@@ -17,11 +17,11 @@
 # Police Examination Process - README
 
 ## Project Overview
-The **Police Examination Process** project aims to develop a streamlined, digitalized system to support applicants in obtaining driving licenses, covering everything from registration to examination and result notification. Key processes are automated to minimize manual data handling and ensure data accuracy.
+The **Police Examination Process** project aims to develop a streamlined, digitalized system to support applicants in obtaining driving licenses, covering everything from registration to examination and result notification. Key processes are automated to minimize manual data handling and ensure data accuracy and enhance protection.
 
 ## Project Phases
 
-### Phase 2: Business Process Modeling (BPMN Diagram)
+### Phase 2: Business Process Modeling (BPMN Diagram).
 - **Scope:** Design a digitalized driving license application process, from registration to final issuance.
 - **Objectives:**
   - Reduce manual errors and enhance processing efficiency.
@@ -51,7 +51,7 @@ The **Police Examination Process** project aims to develop a streamlined, digita
     - **Test:** `test_id (PK)`, `schedule_id (FK)`, `examiner_id (FK)`, `test_type`, `result`, `comments`.
     - **Examiner:** `examiner_id (PK)`, `fname`, `lname`, `qualification`, `assigned_center`.
     - **License:** `license_id (PK)`, `applicant_id (FK)`, `issue_date`, `expiration_date`, `license_type`.
-    - **Notification:** `notification_id (PK)`, `schedule_id (FK)`, `sent_date`, `status`, `message_type`.
+    - **Notifications:** `notification_id (PK)`, `schedule_id (FK)`, `sent_date`, `status`, `message_type`.
 
 - **Relationships:**
   - **One-to-Many:** An applicant can have multiple exam attempts.
@@ -60,7 +60,7 @@ The **Police Examination Process** project aims to develop a streamlined, digita
 - **Data Scenarios:**
   - **Failed Exam:** Track failed attempts and flag retest eligibility.
   - **License Issuance:** Issue a license upon passing and archive records.
-  - **Notifications:** Automate exam schedule and result notifications.
+  - **Notifications:** Automate exam schedule and result notifications. (Trigger notifications for exam dates and results)
 
     # Phase 4, 5 & 6: Police Examination System  
 
@@ -195,4 +195,4 @@ Each table is interconnected using **primary keys** and **foreign key constraint
 
 
 ## Conclusion
-The **Police Examination Process** project establishes an efficient, digitalized workflow for driving license applications, with enhanced speed, accuracy, and centralized data management through BPMN modeling and structured data relationships.
+The **Police Examination Process** project establishes an efficient, digitalized workflow for driving license applications, with enhanced speed, accuracy, and centralized data management through BPMN modeling and structured data relationships..
