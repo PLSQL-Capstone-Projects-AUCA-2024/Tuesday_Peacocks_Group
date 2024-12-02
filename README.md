@@ -195,4 +195,125 @@ Each table is interconnected using **primary keys** and **foreign key constraint
 
 
 ## Conclusion
-The **Police Examination Process** project establishes an efficient, digitalized workflow for driving license applications, with enhanced speed, accuracy, and centralized data management through BPMN modeling and structured data relationships..
+The **Police Examination Process** project establishes an efficient, digitalized workflow for driving license applications, with enhanced speed, accuracy, and centralized data management through BPMN modeling and structured data relationships.
+
+###Phase 7.
+
+Here’s the **full README file** with all requested contributors, roles, and details:  
+
+---
+
+# **Police Examination Process - Driving License Management System**  
+
+## **Project Overview**  
+The **Driving License Management System** is a database-driven solution designed to streamline and enhance the process of managing police examinations for driving license issuance. This system ensures accuracy, data integrity, automation, and efficient workflow management for applicants, examiners, and the police department.
+
+---
+
+## **Problem Statement**  
+The current paper-based system for managing driving license examinations is inefficient, error-prone, and lacks transparency. Advanced database programming techniques such as triggers, cursors, functions, packages, and auditing were implemented to address these challenges and optimize the system's performance.  
+
+- **Triggers** automate workflows and enforce business rules.  
+- **Cursors** process row-by-row operations effectively.  
+- **Functions** ensure reusable and modular programming.  
+- **Packages** organize related database objects for better maintenance.  
+- **Auditing techniques** ensure accountability and track unauthorized access or changes.  
+
+---
+
+## **System Features**  
+- **Applicant Management:** Stores personal details and tracks application progress.  
+- **Examination Scheduling:** Automates the scheduling of examinations.  
+- **Test Results Storage:** Manages test results and pass/fail status.  
+- **License Issuance:** Issues licenses for successful candidates.  
+- **Notifications:** Tracks and automates notifications for applicants.  
+
+---
+
+## **Contributors and Roles**  
+
+| **ID**      | **Name**                     | **Role**                                                                                   |  
+|-------------|------------------------------|-------------------------------------------------------------------------------------------|  
+| **25964**   | Mugisha Godefroid            | Database Architect & Developer – Designed the database schema and implemented advanced techniques.  |  
+| **25048**   | NTWARI Deus                  | Lead System Designer & Project Coordinator – Led the project design and team coordination efforts. |  
+| **25918**   | INGABIRE NZARAMBA Ritha      | Application Tester – Ensured the database and system functionality met requirements.      |  
+| **26155**   | Ishimwe Mahoro Christianne   | UI/UX Designer – Designed the front-end interfaces for the management system.             |  
+| **26046**   | MABHYALA Wulsy               | System Administrator – Managed database deployment and configurations.                    |  
+| **25514**   | HURUMA Innocent              | Security Specialist – Implemented data encryption and auditing mechanisms.               |  
+| **24849**   | NAHAYO Arnaud                | Backend Developer – Worked on integrating database operations with application logic.     |  
+| **26073**   | UMUGWANEZA Aimée             | Quality Assurance Analyst – Verified workflow processes and handled error management.     |  
+| **26975**   | NIYOYAVUZE AMIELLE PONTIENNE | Data Analyst – Generated statistical reports on examination results.                      |  
+| **25899**   | Arnaud NSHUTI                | Scheduler & Tester – Optimized examination schedules and tested their functionality.      |  
+| **25444**   | Uwizeye Ngoga Sandra         | Documentation Specialist – Created system documentation and user manuals.                |  
+
+---
+
+## **Setup Instructions**  
+
+### **Database Setup**  
+1. Import the provided database schema into your Oracle SQL environment.  
+2. Run the scripts for triggers, functions, and packages provided in the `DatabaseScripts` folder.  
+3. Ensure the database user has appropriate privileges to execute advanced programming constructs.  
+
+### **Application Setup**  
+1. Clone the repository to your local machine.  
+2. Set up the front-end interface for connecting to the database.  
+3. Configure the database connection in the configuration file (`db_config.xml`).  
+
+---
+
+## **How to Run**  
+1. Launch the application interface.  
+2. Use administrator credentials to log in and access management features.  
+3. Schedule examinations, track applicant progress, and manage test results through the interface.  
+
+---
+
+## **Key Features Implemented**  
+### **1. Triggers**  
+- **Example:** BEFORE INSERT trigger to validate test scores.  
+- Automates processes such as sending notifications or updating application status.  
+
+### **2. Cursors**  
+- Used for processing multiple test results row-by-row during report generation.  
+
+### **3. Functions**  
+- Modularized complex operations such as calculating pass percentages or determining eligibility.  
+
+### **4. Packages**  
+- Encapsulated related procedures and functions, such as applicant management and result processing, into reusable packages.  
+
+### **5. Auditing**  
+- Logs unauthorized access attempts and tracks all modifications to sensitive data.  
+
+---
+
+## **Sample SQL Queries**  
+1. **Generate Pass/Fail Statistics:**  
+```sql  
+SELECT test_type, COUNT(*) AS total,  
+    SUM(CASE WHEN result = 'Pass' THEN 1 ELSE 0 END) AS passed,  
+    SUM(CASE WHEN result = 'Fail' THEN 1 ELSE 0 END) AS failed  
+FROM test_results  
+GROUP BY test_type;  
+```  
+
+2. **Schedule Examination:**  
+```sql  
+INSERT INTO examination_schedule (applicant_id, test_date, center_id)  
+VALUES (101, TO_DATE('2024-12-15', 'YYYY-MM-DD'), 5);  
+```  
+
+3. **Audit Query:**  
+```sql  
+SELECT * FROM audit_log WHERE user_id = 'admin' AND action = 'UPDATE';  
+```  
+
+---
+
+## **Acknowledgments**  
+Special thanks to the contributors for their dedicated efforts to ensure the success of this project.  
+
+--- 
+
+Let me know if you'd like any additional details added!
