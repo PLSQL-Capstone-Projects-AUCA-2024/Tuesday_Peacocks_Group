@@ -312,7 +312,7 @@ SELECT * FROM audit_log WHERE user_id = 'admin' AND action = 'UPDATE';
 ---
 
 ## **Acknowledgments**  
-Special thanks to the contributors for their dedicated efforts to ensure the success of this project.  
+Special thanks to the contributors for their dedicated efforts to ensure the success of this project from the beginning till the end, May God bless you all.
 
 --- 
 
